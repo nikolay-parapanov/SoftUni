@@ -1,6 +1,6 @@
 from random import choice
 
-from django.http import HttpResponse, HttpRequest
+from django.http import HttpResponse, HttpRequest, HttpResponseNotFound, HttpResponseBadRequest
 from django.shortcuts import render, redirect, resolve_url
 
 # Create your views here.
@@ -42,4 +42,21 @@ def show_department_details(request: HttpRequest, department_id):
 def redirect_to_first_department(request):
     possible_order_by = ['name', 'age', 'id']
     order_by = choice(possible_order_by)
-    return redirect(f'departments/?order_by={order_by}')
+
+    # to = 'http://softuni.bg'
+    # to = f'departments/?order_by={order_by}'
+    return redirect('show department details', department_id=13)
+
+def show_not_found(request):
+    status_code = 404
+    # return HttpResponseNotFound('This is not found')
+    return HttpResponse('Error:', status=status_code)
+
+
+
+
+
+
+
+
+
