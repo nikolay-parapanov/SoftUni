@@ -1,31 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="d01dc796-ff6d-47ec-9644-4746a6e5c7e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+=======
+    <list default="true" id="fc957e62-7213-4939-8347-1a6421da77dc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../departments/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../departments/.idea/departments.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../departments/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../departments/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../departments/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../departments/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../departments/departments/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../departments/departments/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../departments/departments/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../departments/departments/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../departments/departments/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../departments/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/django101.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django101.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django101/tasks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django101/tasks/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django101/tasks/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django101/tasks/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django101/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django101/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< Updated upstream
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+>>>>>>> Stashed changes
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectId" id="2FjOJ0OQL8Lv0qJZYD6luFCqCDW" />
+=======
+  <component name="ProjectId" id="2FMOBqgcbQX6CNS54xmtOP6FEwL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> Stashed changes
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< Updated upstream
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/np-github/SoftUni/05-Python-web/departments_app"
+=======
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false"
+>>>>>>> Stashed changes
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -33,6 +79,7 @@
     ]
   }
 }]]></component>
+<<<<<<< Updated upstream
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,6 +89,49 @@
       <option name="presentableId" value="Default" />
       <updated>1665001951086</updated>
       <workItem from="1665001952622" duration="5243000" />
+=======
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\np-github\SoftUni\05-Python-web\django101\django101" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="django101" type="Python.DjangoServer" factoryName="Django server">
+      <module name="django101" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="django101.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc957e62-7213-4939-8347-1a6421da77dc" name="Changes" comment="" />
+      <created>1664298354173</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664298354173</updated>
+      <workItem from="1664298356465" duration="8685000" />
+      <workItem from="1664310494971" duration="12033000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -59,4 +149,18 @@
       </map>
     </option>
   </component>
+<<<<<<< Updated upstream
+=======
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+>>>>>>> Stashed changes
 </project>
