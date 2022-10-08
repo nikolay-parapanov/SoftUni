@@ -1,0 +1,42 @@
+{%  extends 'base/base.html' %}
+
+{% load filters %} {# the name of the file #}
+{% load tags %} {# the name of the file #}
+{% block page_title %} Home Page {% endblock %}
+
+{% block page_content %}
+<h1>
+    {{ title }}: {{ value }}
+</h1>
+
+<h1>
+    {{ info.address }}
+</h1>
+
+<h1>
+    {{ student.get_info }}
+</h1>
+<ul>
+    {% for student in students %}
+        <li>{{ student }}</li>
+    {% empty %}
+        <li>No students</li>
+    {% endfor %}
+</ul>
+<nav>
+    <a href='{% url 'index' %}'>Go to Home</a>
+</nav>
+<nav>
+    <a href='{% url 'redirect to home' %}'>Redirect to Home</a>
+</nav>
+
+<div>
+    Original: {{ values }}
+</div>
+
+<div>
+    Odd: {{ values|odd }}
+</div>
+
+{% student_info student=student %}
+{% endblock %}
