@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="display: flex; justify-content: space-between">
+
+<ul>
+<div>
+<div>
+    <a1>In Memory</a1>
+    {%  for employee in employees %}
+        <li>
+            <div>
+                {{ employee.first_name }} {{ employee.last_name }}
+            </div>
+            <div>
+                {{ employee.department.name }}
+            </div>
+        </li>
+    {% endfor %}
+</div>
+</div>
+</ul>
+
+<ul>
+    <a1>From DB</a1>
+    {%  for employee in employees2 %}
+        <li>
+            <div>
+                {{ employee.first_name }} {{ employee.last_name }}
+            </div>
+            <div>
+                {{ employee.department.name }}
+            </div>
+        <a href="{%  url 'delete employee' pk=employee.pk%}">
+            Delete
+        </a>
+        </li>
+    {% endfor %}
+
+<h1>
+    {{ Department.name }}
+</h1>
+</ul>
+</body>
+</html>
