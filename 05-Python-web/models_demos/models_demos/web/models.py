@@ -1,11 +1,27 @@
 from django.db import models
+from django.urls import reverse
 
+
+class AuditInfo(models.Model):
+    class Meta:
+        #No table will be created in the DB
+        #Can be inherited in other models
+        abstract = True
 
 class Department(models.Model):
     name = models.CharField(max_length=30)
-
+    slug = models.SlugField(
+        unique=True,
+        null = True,
+    )
     def __str__(self):
         return f'ID; {self.pk}; Name: {self.name}'
+
+    def get_absolut_url(self):
+        url = reverse('details department', kwargs = {
+            'pk': self.pk,
+        })
+        return url
 
 
 class Project(models.Model):
@@ -66,7 +82,7 @@ class Employee(models.Model):
         return f'ID: {self.pk};  Name: {self.first_name} {self.last_name}'
 
 
-class AccessCard(models.Model): 
+class AccessCard(models.Model):
     employee = models.OneToOneField(
         Employee,
         on_delete=models.CASCADE,
