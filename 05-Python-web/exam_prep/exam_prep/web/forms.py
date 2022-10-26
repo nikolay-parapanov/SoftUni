@@ -2,11 +2,30 @@ from django import forms
 
 from exam_prep.web.models import Profile, Album
 
-
-class ProfileCreateForm(forms.ModelForm):
+class ProfileBaseForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = '__all__'
+class ProfileCreateForm(ProfileBaseForm):
+    pass
+class ProfileDeleteForm(ProfileBaseForm):
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args,**kwargs)
+        # self.__set_hidden_fields()
+    # def __set_hidden_fields(self):
+    #     for _, field in self.fields.items():
+    #         field.widget= forms.HiddenInput()
+
+    def save(self, commit =True):
+        if commit:
+            Album.objects.all().delete()
+            self.instance.delete()
+        return self.instance
+
+    class Meta:
+        model = Profile
+        fields = ()
 
 class AlbumBaseForm(forms.ModelForm):
     class Meta:
@@ -49,4 +68,16 @@ class AlbumEditForm(AlbumBaseForm):
     pass
 
 class AlbumDeleteForm(AlbumBaseForm):
-    pass
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args,**kwargs)
+        self.__set_disabled_fields()
+    def save(self, commit =True):
+        if commit:
+            self.instance.delete()
+
+        return self.instance
+    def __set_disabled_fields(self):
+        for _, field in self.fields.items():
+            field.widget.attrs['readonly']='readonly'
+
