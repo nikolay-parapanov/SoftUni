@@ -157,8 +157,10 @@ def delete_profile(request):
             form.save()
             Game.objects.all().delete()
             Profile.objects.first().delete()
+
             return redirect('home')
     context={
         'profile':profile,
+        'form': form
     }
     return render(request, 'delete-profile.html',context)

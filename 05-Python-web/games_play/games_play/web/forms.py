@@ -22,6 +22,9 @@ class ProfileDeleteForm(forms.ModelForm):
         model = Profile
         fields = "__all__"
 
+    def save(self, commit=True):
+        pass
+
 class GameBaseForm(forms.ModelForm):
     class Meta:
         model = Game
