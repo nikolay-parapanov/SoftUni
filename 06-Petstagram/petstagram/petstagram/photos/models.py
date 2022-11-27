@@ -2,7 +2,7 @@ from django.core.exceptions import ValidationError
 from django.core.validators import MinLengthValidator
 from django.db import models
 
-from petstagram.pets.models import Pet
+from petstagram.pets.models import Pet, StrFromFieldsMixin
 
 
 # Create your models here.
@@ -13,7 +13,8 @@ def validate_image_less_than_5mb(image):
     if filesize > megabyte_limit *1024 *1024:
         raise ValidationError(f'Max filesize is {megabyte_limit} MB')
 
-class Photo(models.Model):
+class Photo(StrFromFieldsMixin ,models.Model):
+    str_fields = ('photo', 'location')
     MIN_DESCRIPTION_LENGTH = 10
     MAX_DESCRIPTION_LENGTH = 300
 
