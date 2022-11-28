@@ -1,8 +1,6 @@
 from django.shortcuts import render
-
 from petstagram.core.utils import apply_likes_count, apply_user_liked_photo
 from petstagram.pets.models import Pet
-from petstagram.photos.models import Photo
 
 
 # Create your views here.
