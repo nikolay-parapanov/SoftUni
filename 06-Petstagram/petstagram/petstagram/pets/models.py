@@ -37,10 +37,6 @@ class Pet(StrFromFieldsMixin, models.Model):
         blank=True,
     )
 
-    def __init__(self, *args, **kwargs):
-        if not self.slug:
-            slug = slugify(f'{self.id}-{self.name}')
-        super().__init__(slug=slug, *args, **kwargs)
 
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)

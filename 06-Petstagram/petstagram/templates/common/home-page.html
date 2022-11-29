@@ -3,7 +3,6 @@
 {% block page_content %}
     <div class="container">
         <div class="col-9">
-
             <!-- Start Searchbar Form -->
             <form class="searchbar" method="post">
                 <input type="text" placeholder="Search by pet name...">
@@ -12,12 +11,10 @@
                 </button>
             </form>
             <!-- End Searchbar Form -->
-
             <!-- Start Pet Photos Post Section -->
             {% for photo in photos %}
                 {% include 'partials/photo-item.html' with photo=photo %}
             {% endfor %}
-
         </div>
     </div>
 {% endblock %}
