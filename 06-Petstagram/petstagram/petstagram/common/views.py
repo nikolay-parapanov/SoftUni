@@ -8,10 +8,6 @@ from petstagram.core.utils import apply_likes_count, apply_user_liked_photo
 from petstagram.photos.models import Photo
 
 
-# Create your views here.
-
-
-
 def index(request):
     photos = [apply_likes_count(photo) for photo in Photo.objects.all()]
     photos = [apply_user_liked_photo(photo) for photo in photos]
@@ -32,16 +28,18 @@ def like_photo(request, photo_id):
     if user_liked_photos:
         user_liked_photos.delete()
     else:
-        photo_like = PhotoLike(
-            photo_id=photo_id,
-        )
-        photo_like.save()
+        # Variant 1
+        # photo_like = PhotoLike(
+        #     photo_id=photo_id,
+        # )
+        # photo_like.save()
 
     # # Variant 2
-    # PhotoLike.objects.create(
-    #     photo_id=photo_id,
-    # )
-    return redirect(get_photo_url(request,photo_id))
+        PhotoLike.objects.create(
+            photo_id=photo_id,
+        )
+    redirect_path = request.META['HTTP_REFERER'] + f'#photo-{photo_id}'
+    return redirect(redirect_path)
 
 def share_photo(request, photo_id):
     photo_details_url = reverse('details photo', kwargs={

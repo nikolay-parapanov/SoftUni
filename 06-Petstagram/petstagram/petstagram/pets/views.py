@@ -24,7 +24,7 @@ def details_pet(request, username, pet_slug):
     context = {
         'pet': pet,
         'photos_count': pet.photo_set.count(),
-        'pet_photos': photos,
+        'pet_photos': pet.photo_set.all(),
     }
     return render(
         request,

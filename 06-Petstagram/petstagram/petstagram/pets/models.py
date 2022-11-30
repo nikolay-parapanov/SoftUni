@@ -1,18 +1,9 @@
 from django.db import models
 from django.utils.text import slugify
-
-
-class StrFromFieldsMixin:
-    str_fields = ()
-
-    def __str__(self):
-        return ', '.join(
-            f'{str_field}={getattr(self, str_field, None)}' for str_field in self.str_fields
-        )
-
+from petstagram.core.models_mixins import StrFromFieldsMixin
 
 class Pet(StrFromFieldsMixin, models.Model):
-    str_fields = ('id', 'name','slug')
+    str_fields = ('id', 'name')
     PET_MAX_NAME = 30
     name = models.CharField(
         max_length=PET_MAX_NAME,
