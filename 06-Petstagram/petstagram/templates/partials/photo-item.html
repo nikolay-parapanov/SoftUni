@@ -30,7 +30,7 @@
     </div>
     <!-- Post image -->
     <div class="imgBx" id="photo-{{ photo.pk }}">
-{#        <img src="{{ photo.photo.url }}" alt="post" class="cover">#}
+        <img src="/media/{{ photo.photo }}" alt="post" class="cover">
     </div>
     <!-- -->
 
@@ -106,7 +106,8 @@
         <!-- tagged pets -->
         {% for pet in photo.tagged_pets.all %}
             {#            TODO: change username to actual user when auth is available#}
-            <a href="{% url 'details pet' username='doncho' pet_slug=pet.slug %}">
+{#            <a href="{% url 'details pet' username='doncho' pet_slug=pet.slug %}">#}
+{#            <a href="{% url 'details pet' username='doncho' pet_slug=pet.slug %}">#}
                 <p class="message">
                     <b>{{ pet.name }}</b>
                 </p>

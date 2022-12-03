@@ -53,7 +53,7 @@ def delete_pet(request, username, pet_slug):
         form = PetDeleteForm(request.POST, instance=pet)
         if form.is_valid():
             form.save()
-            return redirect('profile details',pk=1)
+            return redirect('details user',pk=1)
 
     context = {
         'form': form,
