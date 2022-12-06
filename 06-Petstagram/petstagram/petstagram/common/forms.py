@@ -7,4 +7,3 @@ class PhotoCommentForm(forms.ModelForm):
     class Meta:
         model = PhotoComment
         fields = '__all__'
-        
