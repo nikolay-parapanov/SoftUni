@@ -14,12 +14,14 @@ class ChoicesEnumMixin:
 
     @classmethod
     def max_len(cls):
-        return max(len(name) for name,_ in cls.choices())
+        return max(len(name) for name, _ in cls.choices())
 
-class Gender(ChoicesEnumMixin,Enum):
+
+class Gender(ChoicesEnumMixin, Enum):
     male = 'Male'
     female = 'Female'
     DoNotShow = 'Do not show'
+
 
 class AppUser(auth_models.AbstractUser):
     MIN_LEN_FIRST_NAME = 2
@@ -41,3 +43,14 @@ class AppUser(auth_models.AbstractUser):
             validate_only_letters,
         )
     )
+    email = models.EmailField(
+        unique=True
+    )
+    gender = models.CharField(
+        choices=Gender.choices(),
+        max_length=Gender.max_len(),
+    )
+
+    @property
+    def fullname(self):
+        return
