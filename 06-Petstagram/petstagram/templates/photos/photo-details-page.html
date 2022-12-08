@@ -16,44 +16,37 @@
                             </div>
                         </a>
                         <h3>
-
-                            <!-- Link to User Profile Details Page -->
                             <a href="#">
-                                <!-- IF user has first name and last name -->
-                                Diyan Kalaydzhiev
-                                <!-- else -->
-                                <!-- show user username -->
+                                {% if photo.user.get_full_name %}
+                                    {{ photo.user.get_full_name }}
+                                {% else %}
+                                    {{ photo.user.username }}
+                                {% endif %}
                             </a>
                             <br>
-
-                            <!-- IF the photo has location -->
                             {% if photo.location %}
                                 <span>{{ photo.location }}</span>
                             {% endif %}
-{#                            {% if is_owner %}#}
-                            <div class="edit-delete-btns">
-                                <a href="{% url 'edit photo' pk=photo.pk %}">
-                                    <img class="edit-img" src="{% static 'images/edit-pen-icon-6.jpg' %}"
-                                         alt="edit button">
-                                </a>
-
-                                <!-- Link to Delete Pet Photo Page -->
-                                <a href="{% url 'delete photo' pk=photo.pk %}">
-                                    <img class="bin-img" src="{% static 'images/icon-remove-22.jpg' %}"
-                                         alt="bin button">
-                                </a>
-                            </div>
-{#                            {% endif %}#}
+                            {% if is_owner %}
+                                <div class="edit-delete-btns">
+                                    <a href="{% url 'edit photo' pk=photo.pk %}">
+                                        <img class="edit-img" src="{% static 'images/edit-pen-icon-6.jpg' %}"
+                                             alt="edit button">
+                                    </a>
+                                    <a href="{% url 'delete photo' pk=photo.pk %}">
+                                        <img class="bin-img" src="{% static 'images/icon-remove-22.jpg' %}"
+                                             alt="bin button">
+                                    </a>
+                                </div>
+                            {% endif %}
                         </h3>
                     </div>
                 </div>
 
                 <div class="imgBx" id="place the id of the photo here">
-                    <!-- Pet Photo -->
                     <img src="media/{{ photo.photo }} %}" alt="photo of the pets {{ photo.tagged_pets.all|join:', ' }}"
                          class="cover">
                 </div>
-
                 <div class="bottom">
                     <div class="actionBtns">
                         <div class="left">
@@ -102,11 +95,7 @@
                                         {% endif %}
 								    </a>
                             </span>
-                            <!-- End Like Button -->
-
-                            <!-- Start Share  Button -->
-
-                            <!-- Link to Share Path -->
+                            <!-- End Like Buare Path -->
                             <a href="#">
                                 <svg aria-label="Share Post" class="_8-yf5 " color="#262626" fill="#262626"
                                      height="24" role="img" viewBox="0 0 48 48" width="24">
@@ -121,30 +110,18 @@
                             </a>
                         </div>
                     </div>
-                    <!-- End Like and Share Buttons Section -->
 
-                    <!-- Number of Likes for the Photo -->
-                    <p class="likes">{{ likes_count }}</p>
+                    <p class="likes">{{ likes_count }} likes </p>
 
-                    <!-- Start Tagged Pets Section-->
-                    <!-- Link to First Tagged Pet Details Page -->
-                    <a href="#">
+                    {% for pet in photo.tagged_pets.all %}
+                    <a href="{% url 'details pet' pet_slug=pet.slug username=pet.user.username %}">
                         <p class="message">
-                            <b>Sasho</b>
+                            <b>{{ pet.name }}</b>
                         </p>
                     </a>
-                    <!-- Link to Second Tagged Pet Details Page -->
-                    <a href="#">
-                        <p class="message">
-                            <b>Some other fish</b>
-                        </p>
-                    </a>
-                    <!-- End Tagged Pets Section-->
+                    {% endfor %}
 
-                    <!-- Date of Publication or edit of the Photo -->
-                    <h5 class="postTime">19/09/2022</h5>
-
-                    <!-- Start Comments Section -->
+                    <h5 class="postTime">{{ photo.publication_date}}</h5>
                     <div class="comments">
                         <div class="top">
                             <div class="userDetails">

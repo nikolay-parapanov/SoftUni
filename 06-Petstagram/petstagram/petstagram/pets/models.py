@@ -1,6 +1,10 @@
+from django.contrib.auth import get_user_model
 from django.db import models
 from django.utils.text import slugify
 from petstagram.core.models_mixins import StrFromFieldsMixin
+
+
+UserModel = get_user_model()
 
 class Pet(StrFromFieldsMixin, models.Model):
     str_fields = ('id', 'name')
@@ -28,6 +32,10 @@ class Pet(StrFromFieldsMixin, models.Model):
         blank=True,
     )
 
+    user = models.ForeignKey(
+        UserModel,
+        on_delete=models.RESTRICT,
+    )
 
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)

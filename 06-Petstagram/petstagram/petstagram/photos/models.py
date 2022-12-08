@@ -1,9 +1,11 @@
+from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
 from django.core.validators import MinLengthValidator
 from django.db import models
 from petstagram.core.models_mixins import StrFromFieldsMixin
 from petstagram.pets.models import Pet
 
+UserModel = get_user_model()
 
 def validate_image_less_than_5mb(image):
     filesize = image.file.size
@@ -47,4 +49,10 @@ class Photo(StrFromFieldsMixin, models.Model):
     tagged_pets = models.ManyToManyField(
         Pet,
         blank=True,
+    )
+
+
+    user = models.ForeignKey(
+        UserModel,
+        on_delete=models.RESTRICT,
     )
