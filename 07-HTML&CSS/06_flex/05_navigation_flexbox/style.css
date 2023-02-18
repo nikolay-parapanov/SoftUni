@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    border-bottom: 2px solid rgb(0,0,0);
+    width: 100%;
+}
+
+nav{
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+nav ul { 
+    display: flex;
+    list-style-type: none;
+    gap: 26px;
+    margin-left: auto;
+}
+
+a { 
+    text-decoration: none;
+    color: rgb(0,153,0);
+}
