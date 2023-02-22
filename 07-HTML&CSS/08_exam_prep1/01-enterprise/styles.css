@@ -1,0 +1,67 @@
+/* 
+background - light gray: #f6f8f9
+purple - #786eff
+title - #273240
+desc - #828b93
+*/
+
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+section {
+  background-color: #f6f8f9;
+  width: 950px;
+  height: 400px;
+  margin: 6rem auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.asana .content {
+  width: 40%;
+  margin-left: 4rem;
+}
+
+.asana .content .subtitle{
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.asana .content .title{
+    font-size: 2rem;
+    margin-top: 0.9rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    letter-spacing: 1.1px;
+}
+
+.asana .content .description{
+    width: 85%;
+    font-size: 0.9rem;
+    margin-bottom: 2.4rem;
+    font-weight: 100;
+    letter-spacing: 1.1px;
+}
+
+.btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 5rem;
+}
+
+.btn-primary{
+    background-color: #786eff;
+    color: white;
+    border-color: #786eff;   
+    margin-right: .6rem; 
+}
+
+.finger-pic { 
+    width: 300px;
+    /* aspect-ratio: 1/1; */
+    margin-right: 3rem;
+}
