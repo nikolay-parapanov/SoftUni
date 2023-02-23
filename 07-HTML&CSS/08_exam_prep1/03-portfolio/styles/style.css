@@ -1,0 +1,275 @@
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital@1&display=swap");
+/* 
+
+background color - #efefef ;
+titles black - #222222;
+titles light gray - #838383;
+icons - dark gray - #909090;
+button - black - #111111;
+socials - white - #ffffff;
+
+ */
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+header {
+  width: 94%;
+  margin: 0 auto;
+  background-color: #efefef;
+}
+
+.nav-items {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.nav-items .fa-bars {
+  margin-right: 2rem;
+}
+
+section {
+  width: 94%;
+  height: 80vh;
+  margin: 0 auto 2rem auto;
+  background-color: #efefef;
+}
+
+/* FIRST SECTION */
+.first-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.first-section .info {
+  width: 39%;
+  margin-left: 7rem;
+}
+
+.first-section .first-image {
+  width: 50%;
+  margin: 0 2rem;
+}
+
+.first-section .info h1 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  font-weight: 100;
+}
+
+.bolded {
+  font-weight: 700;
+}
+
+.first-section .info p {
+  font-style: italic;
+  font-size: 1.5rem;
+  word-spacing: 1.2px;
+  margin-bottom: 2.5rem;
+}
+
+.first-section .divider-vertical {
+  width: 1px;
+  height: 100px;
+  background-color: black;
+  margin-bottom: 270px;
+}
+
+/* SECOND SECTION */
+.second-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.second-section .second-image {
+  width: 44%;
+  margin-left: 4rem;
+}
+.second-section .info {
+  width: 50%;
+  margin-left: 7rem;
+}
+
+.second-section .info h2 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  font-weight: 100;
+}
+.second-section .info p {
+  font-style: italic;
+  font-size: 1.3rem;
+  word-spacing: 1.2px;
+  margin-bottom: 2rem;
+  margin-right: 6rem;
+}
+.second-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+.divider-horizontal {
+  align-self: center;
+  width: 46px;
+  height: 1px;
+  background-color: black;
+  margin-right: 1rem;
+}
+
+/* Socials */
+
+.socials .socials-holder {
+  background-color: #909090;
+  color: white;
+  margin: 1rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.socials .socials-items {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.fa,
+.fab,
+.fal,
+.far,
+.fas {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* THIRD SECTION */
+.third-section .third-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FOURTH SECTION */
+
+.fourth-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fourth-section .info {
+  width: 39%;
+  margin-left: 7rem;
+}
+
+.fourth-section .fourth-image {
+  width: 50%;
+  margin: 0 2rem;
+}
+
+.fourth-section .info h1 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  font-weight: 100;
+}
+.bolded {
+  font-weight: 700;
+}
+
+.fourth-section .info p {
+  font-style: italic;
+  font-size: 1.5rem;
+  word-spacing: 1.2px;
+  margin-bottom: 2.5rem;
+}
+
+.fourth-section .divider-vertical {
+  width: 1px;
+  height: 90px;
+  background-color: black;
+  margin-bottom: 100px;
+}
+
+/* SIXT SECTION */
+
+.fifth-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fifth-section-image1,
+.fifth-section-image2,
+.fifth-section-image3 {
+  width: 33%;
+  height: 60%;
+  aspect-ratio: auto;
+}
+
+.fifth-section-image1:hover,
+.fifth-section-image2:hover,
+.fifth-section-image3:hover {
+  transform: scale(1.6);
+}
+
+.sixth-section {
+  margin-bottom: 0;
+}
+
+.sixth-section .hello-title {
+  font-weight: 100;
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.sixth-section .form-desc {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+  width: 50%;
+  justify-self: ;
+}
+
+.email,
+.subject {
+  width: 380px;
+  height: 50px;
+  margin-bottom: 35px;
+}
+
+.email{
+  margin-right: 40px;
+}
+.message {
+  width: 800px;
+  margin-bottom: 35px;
+}
+
+.btn-form {
+  width: 800px;
+  background-color: #111111;
+  color: white;
+}
+
+footer { 
+    width: 94%;
+    height: 3vh;
+    text-align: center;
+    margin: 0 auto 2rem auto;
+    background-color: #efefef;
+}
