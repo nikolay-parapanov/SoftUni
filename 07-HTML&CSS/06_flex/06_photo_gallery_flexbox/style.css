@@ -1,0 +1,21 @@
+body, ul, li {
+    display: flex;
+}
+
+ul{ 
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px
+}
+
+li{
+    border: 10px solid black;
+    flex: 1 0 28%;
+    padding: 20px;
+    justify-content: center;
+}
+
+img {
+    aspect-ratio: calc(7/5);
+}

@@ -1,0 +1,71 @@
+/* TODO: Add responsive styles here... */
+@media (max-width: 600px) {
+
+.hero img{
+    display: none;
+}
+
+.navbar {
+    justify-content: center;
+}
+.navbar-light .navbar-brand {
+    margin-right: 0;
+}
+
+.hero h1 {
+    text-align: center;
+    margin-top: 60px;
+}
+.hero p {
+    text-align: center;
+}
+
+h2,h5 {
+text-align: center;}
+.hero-btns {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.hero-btns a:first-child {
+    display: block;
+    align-items: cener;
+    width: 60%;
+    text-align:center;
+}
+
+.services p {
+    font-size: 1rem;
+    color: #314584;
+    line-height: 1.5rem;
+    padding-bottom: 6rem;
+}
+
+.container .row .col-12 {
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    text-align: center;
+}
+
+.hero-btns a:last-child {
+display: none;
+}
+
+.contact-nav { 
+    display: flex;
+    flex-direction: column;
+}
+
+footer h6 {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+}

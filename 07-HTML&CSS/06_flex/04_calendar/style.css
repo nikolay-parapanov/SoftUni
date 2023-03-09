@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-content: center;
+  max-width: 65vw;
+  text-align: center;
+  border: 1px solid black;
+}
+
+span {
+  border: 1px solid black;
+  padding: 12px;
+}
+
+.container .week {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+.container .week .workweek {
+  flex-wrap: wrap;
+  width: 100%;
+}
+.container .week .weekend {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container .item1 {
+  width: 20%;
+}
+.container .item2 {
+  width: 50%;
+}
+
+.container .notes {
+  display: flex;
+  flex-direction: column;
+  width: 25% ;
+}
+
+.container .notes .item3 {
+  height: 50%;
+}

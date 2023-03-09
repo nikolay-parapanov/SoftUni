@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital@1&display=swap');
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+
+
+/* 
+background - #f6e0b5
+font color - #948780; 
+ pics background - #66545e;
+ pics font color - #dfdfe4;
+ cards border color  - #8f845c;
+*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f6e0b5;
+}
+
+.blog {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.blog .cards { 
+    max-width: 65%;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0rem 3rem 4rem;
+}
+
+.blog .descr { 
+    width: 500px;
+    margin: 4rem 1rem 0rem 0rem;
+    font-size: 1.4rem;
+    color: #948780;
+
+}
+.cards-list { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 3rem;  
+}
+.list-item{
+    border-radius: 2rem;
+    overflow: hidden;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+img {
+    width: 590px;
+    height: 290px;
+}
+
+p{
+    background-color: #66545e;
+    color: #dfdfe4;
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding-left: 0.75rem;
+    line-height: 4rem;
+}
+.descr .title {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+i { 
+color: #948780; 
+font-size: 2.25rem;
+margin-right: 3px;
+}
+
+.inlineset {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.categories { 
+    width: 440px;
+}

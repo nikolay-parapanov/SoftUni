@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital@1&display=swap");
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+/* 
+button color #370511
+hero color title - #0c0c0d
+h2 title - #090a0b
+
+*/
+
+/* 
+Landing Page
+*/
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  height: 76vh;
+  overflow: hidden;
+}
+
+.landing-image {
+  position: relative;
+  width: 100%;
+  top: -630px;
+}
+
+.header {
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: flex;
+}
+.nav-item {
+  margin: 2rem 0.5rem;
+}
+.travel {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.nav-link {
+  color: #0c0c0d;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+.btn-explore {
+  border-radius: 16px;
+  background-color: #370511;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 1px 16px;
+}
+
+.hero-description {
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  width: 60%;
+  top: 140px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 1.1;
+  margin-bottom: 2.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1.05px;
+}
+
+.btn-explore.homes {
+  margin-top: 2.5rem;
+}
+
+/* 
+Travel Section
+ */
+
+.heading-travel {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.heading-travel h2 {
+margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0rem;
+}
+.heading-travel h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(99, 98, 98);
+  padding-bottom: 2rem;
+}
+.cards {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem
+}
+.card-item { 
+    width: 30%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-item-image { 
+    width: 100%;
+    height: 300px;
+}
+.card-item h5{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 1.5rem 0rem;
+
+}
+.card-item p{
+    font-size: 0.9rem;
+    text-align: left;
+    font-weight: 300;
+    margin-left: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-discover-place {
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0 0rem 2rem 4.7rem;
+    align-items: center;
+
+}
+
+
+/* 
+Footer
+ */
+
+footer {
+  height: 25vh;
+  background-color: black;
+  color: white;
+  align-items: center;
+  vertical-align: center;
+}
+
+.footer-container {
+  padding-top: 2.5rem;
+  display: flex;
+  color: white;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 350px;
+}
+.footer-list {
+}
+.footer-item {
+  margin-bottom: 1rem;
+}
+
+.socials-item-icon {
+  color: white;
+}
