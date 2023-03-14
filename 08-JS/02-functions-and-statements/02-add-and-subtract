@@ -1,0 +1,11 @@
+function addAndSubtract(firstNum, secondNum, thirdNum) {
+    function adding(a, b) {
+        return a + b
+    };
+    function subtraction(c, d) {
+        return c - d;
+    };
+    return subtraction(adding(firstNum, secondNum), thirdNum)
+}
+
+addAndSubtract (10,5,3);
