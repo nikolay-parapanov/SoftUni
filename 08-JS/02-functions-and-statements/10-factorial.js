@@ -11,5 +11,6 @@ function factoriaDivision(firstNumber, secondNumber) {
     }
 
 }
+
 console.log(factoriaDivision(5,2));
 console.log(factoriaDivision(6,2));
