@@ -14,7 +14,6 @@ function store(firstArrayInput, secondArrayInput) {
             store[previousProp] += value;
         }
     }
-    console.log(store);
     for (const key in store) {
         console.log(`${key} -> ${store[key]}`)
     }
