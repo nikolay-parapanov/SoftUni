@@ -23,3 +23,6 @@
     outline: none;
     cursor: pointer;
 }
+li { 
+    display: flex;
+}
